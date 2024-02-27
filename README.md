@@ -8,7 +8,7 @@
     - 计算机应用技术 223 班绑定链接：https://pintia.cn/home/bindings?k=298652&c=qzoi
     - 计算机应用技术 225 班绑定链接：https://pintia.cn/home/bindings?k=198912&c=qzoi
     - 计算机应用技术 226、227 班绑定链接：https://pintia.cn/home/bindings?k=633610&c=qzoi
-- 本课程平时成绩占50%，期末成绩占50%
+- 本课程平时成绩占50%（初始默认满分[100]），期末成绩占50%
     - 平时成绩由课堂表现和作业完成情况组成：
         - 每缺一次作业，扣 2 分；
         - 每迟到一次，扣 1 分；
