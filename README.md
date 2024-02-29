@@ -14,3 +14,6 @@
         - 每迟到一次，扣 1 分；
         - 每旷课一次，扣 10 分。
     - 平时成绩查询网址：http://check.thallo.world/ [仅校园网可访问]
+# 开发环境
+- Windows 10
+- Android Studio 2023.1.1.28 - windows [下载链接：https://developer.android.com/studio?hl=zh-cn]
