@@ -45,3 +45,22 @@
 <!--结束constraintlayout的定义-->
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+
+```Java
+//这一行声明了这个类所在的包名。包名是用来组织和管理Java类的一种方式，也可以用来避免类名冲突
+package com.example.hiandroid;
+//这一行是一个导入语句，导入了 AndroidX 库中的 AppCompatActivity 类。AppCompatActivity 是 Android 应用开发中使用的一个基础类，用于创建具有兼容性的活动（Activity）
+import androidx.appcompat.app.AppCompatActivity;
+//这一行导入了 Android OS 包中的 Bundle 类。Bundle 通常用于在 Android 组件之间传递数据。
+import android.os.Bundle;
+//这一行声明了一个名为 MainActivity 的公共类，并且这个类继承自 AppCompatActivity。继承 AppCompatActivity 意味着这个类可以作为一个 Android 活动（Activity）来运行，并且具有兼容性特性
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    //这一行定义了一个名为 onCreate 的方法，这是 Android 活动（Activity）生命周期中的一个重要方法。当活动被首次创建时，系统会调用这个方法。这个方法接受一个 Bundle 类型的参数，通常用于保存和恢复活动的状态信息。
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+```
