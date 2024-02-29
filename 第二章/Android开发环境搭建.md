@@ -14,3 +14,34 @@
     - 参考教材
     - 先配置 SDK 然后配置 AVD 接着启动安卓虚拟设备
 - 创建空项目 HiAndroid 并等待 Gradle 下载完成后进行运行
+
+# HiAndroid 案例源码分析
+
+```xml
+<!--这是XML声明，指定了XML的版本（1.0）和编码（utf-8）-->
+<?xml version="1.0" encoding="utf-8"?>
+<!--ConstraintLayout 是 Android 中的一个布局容器，它允许通过约束条件来定位和调整其子视图-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    //定义 Android 命名空间的 XML 命名空间前缀 android。这使得你可以在 XML 文件中使用 Android 特定的属性
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    //定义 tools 命名空间，它通常用于在 Android Studio 中提供设计时的属性，这些属性不会影响运行时的行为
+    xmlns:tools="http://schemas.android.com/tools"
+    //定义 app 命名空间，它通常用于自定义属性或来自库的属性
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    //设置 ConstraintLayout 的宽度和高度以匹配其父容器的大小
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    指定这个布局与哪个活动（Activity）相关联。这主要用于在 Android Studio 的布局编辑器中提供上下文。
+    tools:context=".MainActivity">
+    <!--开始定义一个 TextView，它是一个用于显示文本的视图-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi Android!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--结束constraintlayout的定义-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
