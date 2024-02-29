@@ -17,5 +17,5 @@
 # 开发环境
 - Windows 10
 - Android Studio 2023.1.1.28 - windows [下载链接：https://developer.android.com/studio?hl=zh-cn]
-- Kotlin
+- JDK 8
 - Android 10
