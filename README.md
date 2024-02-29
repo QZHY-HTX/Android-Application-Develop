@@ -15,4 +15,4 @@
         - 每旷课一次，扣 10 分。
     - 平时成绩查询网址：http://check.thallo.world/ [仅校园网可访问]
 
-# PR Test Again
+# PR Test Again 1
