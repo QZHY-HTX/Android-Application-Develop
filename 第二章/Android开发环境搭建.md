@@ -14,7 +14,7 @@
     - 参考教材
     - 先配置 SDK 然后配置 AVD 接着启动安卓虚拟设备
 - 创建空项目 HiAndroid 并等待 Gradle 下载完成后进行运行
-
+- PPT 中采用 Windows7 + Eclipse + JDK7 + ADT 共同部署，这种方式较为古老，作为课外了解
 # HiAndroid 案例源码分析
 
 ```xml
