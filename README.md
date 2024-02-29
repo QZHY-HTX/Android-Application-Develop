@@ -16,6 +16,6 @@
     - 平时成绩查询网址：http://check.thallo.world/ [仅校园网可访问]
 # 开发环境
 - Windows 10
-- Android Studio 2023.1.1.28 - windows [下载链接：https://developer.android.com/studio?hl=zh-cn]
+- Android Studio 3.5.2 [下载链接：https://dl.google.com/dl/android/studio/install/3.5.2.0/android-studio-ide-191.5977832-windows.exe]
 - JDK 8
 - Android 10
