@@ -23,5 +23,3 @@
 - Android 10 [Android SDK 29]
 
 # 测试
-
-# 1304 7个人迟到了
