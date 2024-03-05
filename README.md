@@ -25,3 +25,5 @@
 - Android Studio 3.5.2 [下载链接：https://dl.google.com/dl/android/studio/install/3.5.2.0/android-studio-ide-191.5977832-windows.exe]
 - JDK 8
 - Android 10 [Android SDK 29]
+
+# 1302 Test
