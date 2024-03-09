@@ -54,3 +54,26 @@ fun main(){
 |Sets|唯一的无序项目集合|
 |Maps|键值对构成的集合，其中键是唯一的，并且仅映射到一个值|
 
+## List
+```kotlin
+fun main(){
+    val shapes = listOf("A", "B", "C")
+    println(shapes)
+    println(shapes[0])
+    println(shapes.first())
+    println(shapes.count())
+    println(shapes.last())
+    println("A" in shapes)
+    println("D" in shapes)
+}
+```
+
+```kotlin
+fun main(){
+    val Shapes = mutableListOf("A","B","C")
+    Shapes.add("D")
+    println(Shapes)
+    Shapes.remove("A")
+    println(Shapes)
+}
+```
