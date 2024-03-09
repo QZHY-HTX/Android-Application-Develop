@@ -4,3 +4,13 @@
 - Kotlin official tutorial：https://kotlinlang.org/docs/kotlin-tour-hello-world.html
 
 - 在线编译器：https://play.kotlinlang.org/
+
+---
+
+# Hello World
+这个示例描述如何使用 Kotlin 输出信息
+```kotlin
+fun main(){
+    println("Hello, world!")
+}
+```
