@@ -77,3 +77,21 @@ fun main(){
     println(Shapes)
 }
 ```
+
+## Set
+```kotlin
+fun main(){
+    val readOnlyFruit = setOf("apple","banana","cherry","cherry")
+    println(readOnlyFruit)
+}
+```
+
+```kotlin
+fun main(){
+    val Fruit = mutableSetOf("apple","banana","cherry","cherry")
+    Fruit.add("pear")
+    println(Fruit)
+    Fruit.remove("apple")
+    println(Fruit)
+}
+```
