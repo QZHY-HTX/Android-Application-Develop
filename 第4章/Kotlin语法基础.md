@@ -95,3 +95,25 @@ fun main(){
     println(Fruit)
 }
 ```
+
+## Map
+```kotlin
+fun main(){
+    val readOnlyJuiceMenu = mapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
+    println(readOnlyJuiceMenu)
+    println(readOnlyJuiceMenu.count())
+}
+```
+
+```kotlin
+fun main(){
+    val juiceMenu = mutableMapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
+    println(juiceMenu)
+    juiceMenu.put("pear",150)
+    println(juiceMenu)
+    juiceMenu.remove("orange")
+    println(juiceMenu)
+    println(juiceMenu.keys)
+    println(juiceMenu.values)
+}
+```
