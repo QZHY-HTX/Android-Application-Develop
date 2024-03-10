@@ -117,3 +117,24 @@ fun main(){
     println(juiceMenu.values)
 }
 ```
+
+### 完成三个练习
+- 你现在有一个 list 叫做 greenNumber，还有另一个 list 叫做 redNumber 请完成以下代码片段，并输出两组 list 一共包含多少数据元素。
+
+```kotlin
+fun main() {
+    val greenNumbers = listOf(1, 4, 23)
+    val redNumbers = listOf(17, 2)
+    // 请在此处补充代码
+}
+```
+
+- 你有一个支持你当前服务器的协议数据集，有用户通过特定协议请求你的服务器响应，请完成以下代码片段，告知用户，你的服务器是否支持他的特定协议。
+
+```kotlin
+fun main() {
+    val SUPPORTED = setOf("HTTP", "HTTPS", "FTP")
+    val requested = "smtp"
+    //  请在此处补充代码
+}
+```
