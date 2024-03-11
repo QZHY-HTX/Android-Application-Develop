@@ -71,3 +71,17 @@ fun main(){
     }
 }
 ```
+
+## 做个练习
+
+循环获得从 1 ～ 15 的数，>= 5 输出，<5 不输出
+
+```kotlin
+fun main(){
+    for(num in 1..15){
+        if(num>=5){
+            println(num)
+        }
+    }
+}
+```
