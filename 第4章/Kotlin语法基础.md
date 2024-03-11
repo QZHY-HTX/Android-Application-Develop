@@ -129,6 +129,15 @@ fun main() {
 }
 ```
 
+```kotlin
+fun main() {
+    val greenNumbers = listOf(1, 4, 23)
+    val redNumbers = listOf(17, 2)
+    // 请在此处补充代码
+    println(greenNumbers.count()+redNumbers.count())
+}
+```
+
 - 你有一个支持你当前服务器的协议数据集，有用户通过特定协议请求你的服务器响应，请完成以下代码片段，告知用户，你的服务器是否支持他的特定协议。
 
 ```kotlin
@@ -139,5 +148,20 @@ fun main() {
 }
 ```
 
+```kotlin
+fun main() {
+    val SUPPORTED = setOf("HTTP", "HTTPS", "FTP", "SMTP")
+    val requested = "smtp"
+    //  请在此处补充代码
+    println(requested.uppercase() in SUPPORTED)
+}
+```
+
 - 定义一个映射，将 1～3 的整数和它对应的英文相关联，并输出。
 
+```kotlin
+fun main(){
+    val numbers = mutableMapOf("one" to 1, "two" to 2, "three" to 3)
+    println(numbers)
+}
+```
