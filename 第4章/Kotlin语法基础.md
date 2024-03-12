@@ -128,12 +128,13 @@ fun main() {
     // 请在此处补充代码
 }
 ```
-
+示例代码
 ```kotlin
 fun main() {
     val greenNumbers = listOf(1, 4, 23)
     val redNumbers = listOf(17, 2)
     // 请在此处补充代码
+    println(greenNumbers.count()+redNumbers.count())
 }
 ```
 
@@ -146,13 +147,22 @@ fun main() {
     //  请在此处补充代码
 }
 ```
-
+示例代码
 ```kotlin
 fun main() {
     val SUPPORTED = setOf("HTTP", "HTTPS", "FTP", "SMTP")
     val requested = "smtp"
     //  请在此处补充代码
+    println(requested.uppercase() in SUPPORTED)
 }
 ```
 
 - 定义一个映射，将 1～3 的整数和它对应的英文相关联，并输出。
+
+示例代码
+```kotlin
+fun main(){
+    val numbers = mutableMapOf("one" to 1, "two" to 2, "three" to 3)
+    println(numbers)
+}
+```
