@@ -1,6 +1,10 @@
 # Android 移动应用开发课程仓库
 泉州海洋职业学院信息工程学院2023-2024学年第二学期Android课程仓库
 
+# 参考资料
+- 菜鸟教程 Java：https://www.runoob.com/java/java-tutorial.html
+- bilibili Java
+
 # 课程要求
 - 学生应注册自己的 Github 帐户并能够向本仓库提交 PR 或 issue（具体的操作指南请参考Google或Baidu搜索）
 
@@ -12,7 +16,9 @@
     - 平时成绩由课堂表现和作业完成情况组成：
         - 每缺一次作业，扣 2 分；
         - 每迟到一次，扣 1 分；
-        - 每旷课一次，扣 10 分。
+        - 每旷课一次，扣 10 分;
+        - 课堂上手机音乐响动一次， 扣2分。
+        - 上课回答问题一次，加 1 分。
     - 平时成绩查询网址：http://check.thallo.world/ [仅校园网可访问]
         - 课程建议&反馈请提交 Issue
 # 开发环境
@@ -21,4 +27,4 @@
 - JDK 8
 - Android 10 [Android SDK 29]
 
-# 测试
+# 1302 Test
