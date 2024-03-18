@@ -145,7 +145,20 @@ fun main() {
 }
 ```
 
+<details>
+<summary>点击查看解决方案</summary>
 
+```kotlin
+data class Employee(val name: String, var salary: Int)
+
+fun main() {
+    val emp = Employee("Mary", 20)
+    println(emp)
+    emp.salary += 10
+    println(emp)
+}
+```
+</details>
 
 ---
 
@@ -168,3 +181,30 @@ fun main() {
     println(empGen.generateEmployee())
 }
 ```
+
+<details>
+<summary>点击查看解决方案</summary>
+
+```kotlin
+import kotlin.random.Random
+
+data class Employee(val name: String, var salary: Int)
+
+class RandomEmployeeGenerator(var minSalary: Int, var maxSalary: Int) {
+    val names = listOf("张三", "李四", "王五", "赵六", "钱七", "薛八")
+    fun generateEmployee() =
+        Employee(names.random(),
+            Random.nextInt(from = minSalary, until = maxSalary))
+}
+
+fun main() {
+    val empGen = RandomEmployeeGenerator(10, 30)
+    println(empGen.generateEmployee())
+    println(empGen.generateEmployee())
+    println(empGen.generateEmployee())
+    empGen.minSalary = 50
+    empGen.maxSalary = 100
+    println(empGen.generateEmployee())
+}
+```
+</details>
