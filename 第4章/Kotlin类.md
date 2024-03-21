@@ -130,3 +130,81 @@ fun main(){
 
 ---
 
+## 练习
+
+1. 定义一个具有两个属性的数据类`Employee`：一个表示姓名，一个表示工资，确保工资是可变的，否则将无法升职加薪。最后通过主函数进行演示：
+
+```kotlin
+// 在此处补充代码
+
+fun main() {
+    val emp = Employee("htx", 20)
+    println(emp)
+    emp.salary += 10
+    println(emp)
+}
+```
+
+<details>
+<summary>点击查看解决方案</summary>
+
+```kotlin
+data class Employee(val name: String, var salary: Int)
+
+fun main() {
+    val emp = Employee("Mary", 20)
+    println(emp)
+    emp.salary += 10
+    println(emp)
+}
+```
+</details>
+
+---
+
+2. 创建一个随机员工生成器，定义一个具有固定潜在名称列表的类，这个类有最低和最高工资共同构成，然后在主函数中演示这个类的使用方法。
+
+```kotlin
+import kotlin.random.Random
+
+data class Employee(val name: String, var salary: Int)
+
+// 在此处补充代码
+
+fun main() {
+    val empGen = RandomEmployeeGenerator(10, 30)
+    println(empGen.generateEmployee())
+    println(empGen.generateEmployee())
+    println(empGen.generateEmployee())
+    empGen.minSalary = 50
+    empGen.maxSalary = 100
+    println(empGen.generateEmployee())
+}
+```
+
+<details>
+<summary>点击查看解决方案</summary>
+
+```kotlin
+import kotlin.random.Random
+
+data class Employee(val name: String, var salary: Int)
+
+class RandomEmployeeGenerator(var minSalary: Int, var maxSalary: Int) {
+    val names = listOf("张三", "李四", "王五", "赵六", "钱七", "薛八")
+    fun generateEmployee() =
+        Employee(names.random(),
+            Random.nextInt(from = minSalary, until = maxSalary))
+}
+
+fun main() {
+    val empGen = RandomEmployeeGenerator(10, 30)
+    println(empGen.generateEmployee())
+    println(empGen.generateEmployee())
+    println(empGen.generateEmployee())
+    empGen.minSalary = 50
+    empGen.maxSalary = 100
+    println(empGen.generateEmployee())
+}
+```
+</details>
