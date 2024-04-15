@@ -1,0 +1,21 @@
+- kotlin+java
+  - com.example.compose.rally
+    - data
+      - RallyData.kt
+    - ui
+      - accounts
+        - AccountsScreen.kt
+      - bills
+        - BillsScreen.kt
+      - components
+        - CommonUi.kt
+        - DetailsScreen.kt
+        - RallyAlertDialog.kt
+        - RallyAnimatedCircle.kt
+        - RallyTabRow.kt
+      - overview
+      - theme
+    - RallyActivity.kt
+    - RallyDestinations.kt
+    - RallyNavHost.kt
+  - com.example.compose.rally(androidTest)
